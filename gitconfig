@@ -6,6 +6,7 @@
 [push]
 	default = simple
 [alias]
+	ad = add
 	cm = commit -am
 	ps = push
 	pl = pull
