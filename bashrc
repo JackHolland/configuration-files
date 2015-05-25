@@ -21,4 +21,7 @@ alias home="cd ~"
 alias apptap="cd ~/Code/AppTap"
 alias tap="cd ~/Code/AppTap/Tap/"
 alias dim="xflux -l 43.70 -g -72.29"
+alias now="date +%s"
 export MSL_GSL=T
+source ~/.bash_completion.d/scp.auto
+source ~/.bash_completion.d/julia.auto
