@@ -1,0 +1,2 @@
+run ~/local/pymol/standard_view.py
+run ~/local/pymol/color_contacts.py
