@@ -1,0 +1,21 @@
+#!/bin/bash
+
+_julia() {
+	local cur=${COMP_WORDS[COMP_CWORD]}
+	local defaultreply=false
+	if [[ "$COMP_CWORD" -gt 1 ]]; then
+		scriptfile="${COMP_WORDS[1]}"
+		if [ -a "$scriptfile" ] && [[ "$scriptfile" == *.jl ]]; then
+			arguments=$(grep -o "\--[[:alnum:]-]*" "$scriptfile" | tr "\n" " ")
+			COMPREPLY=( $(compgen -W "$arguments" -- "$cur") )
+		else
+			defaultreply=true
+		fi
+	else
+		defaultreply=true
+	fi
+	if [ "$defaultreply" = true ]; then
+		COMPREPLY=( $(compgen -f "$cur") )
+	fi
+}
+complete -F _julia julia
