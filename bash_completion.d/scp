@@ -1,0 +1,12 @@
+#/bin/bash
+
+_scptf() {
+	local cur=${COMP_WORDS[COMP_CWORD]}
+	if [[ COMP_CWORD -eq 1 ]]; then
+		COMPREPLY=( $(compgen -W "anthill grigoryanlab" -- $cur) )
+	else
+		COMPREPLY=( $(compgen -f $cur) )
+	fi
+}
+complete -F _scptf scpt
+complete -F _scptf scpf
