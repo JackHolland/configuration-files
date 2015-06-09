@@ -14,6 +14,9 @@ alias o="gvfs-open"
 alias c="calc"
 alias home="cd ~"
 alias disk-usage="du -sk *| sort -n | cut -f2 |xargs -d'\n' du -hs $1"
+alias screen-size="xdpyinfo | grep 'dimensions:'"
 export PATH=$PATH:~/bin
 export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:$PYTHONPATH
-source ~/.bash_completion.d/scp.auto
+source ~/.bash_completion.d/scp
+source ~/.bash_completion.d/julia
+source /etc/profile.d/vte.sh
