@@ -8,5 +8,5 @@ _scptf() {
 		COMPREPLY=( $(compgen -f "$cur") )
 	fi
 }
-complete -F _scptf scpt
-complete -F _scptf scpf
+complete -o filenames -F _scptf scpt
+complete -o filenames -F _scptf scpf

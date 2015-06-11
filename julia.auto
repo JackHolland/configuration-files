@@ -18,4 +18,4 @@ _julia() {
 		COMPREPLY=( $(compgen -f "$cur") )
 	fi
 }
-complete -F _julia julia
+complete -o filenames -F _julia julia
