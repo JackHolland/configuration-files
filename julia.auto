@@ -2,19 +2,19 @@
 
 _julia() {
 	local cur=${COMP_WORDS[COMP_CWORD]}
-	local defaultreply=false
-	if [[ "$COMP_CWORD" -gt 1 ]]; then
-		scriptfile="${COMP_WORDS[1]}"
-		if [ -a "$scriptfile" ] && [[ "$scriptfile" == *.jl ]]; then
-			arguments=$(grep -o "\--[[:alnum:]-]*" "$scriptfile" | tr "\n" " ")
+	local default_reply=false
+	if [[ "$COMP_CWORD" -gt 1 ]] && [[ "$cur" =~ \-\- ]]; then
+		local script_file="${COMP_WORDS[1]}"
+		if [ -a "$script_file" ] && [[ "$script_file" == *.jl ]]; then
+			local arguments=$(grep -o "\--[[:alnum:]-]*" "$script_file" | tr "\n" " ")
 			COMPREPLY=( $(compgen -W "$arguments" -- "$cur") )
 		else
-			defaultreply=true
+			default_reply=true
 		fi
 	else
-		defaultreply=true
+		default_reply=true
 	fi
-	if [ "$defaultreply" = true ]; then
+	if [ "$default_reply" = true ]; then
 		COMPREPLY=( $(compgen -f "$cur") )
 	fi
 }
