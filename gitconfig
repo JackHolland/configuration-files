@@ -18,6 +18,8 @@
 	br = branch
 	lb = branch -a
 	co = checkout
+	rs = reset
+	rh = reset --hard
 [color]
     ui = auto
 [color "branch"]
