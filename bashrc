@@ -15,6 +15,7 @@ alias o="gvfs-open"
 alias c="calc"
 alias m="pymol"
 alias md="mkdir"
+alias rmr="rm -rf"
 alias home="cd ~"
 alias screen-size="xdpyinfo | grep 'dimensions:'"
 export PATH=$PATH:~/bin
