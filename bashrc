@@ -18,6 +18,8 @@ alias md="mkdir"
 alias rmr="rm -rf"
 alias home="cd ~"
 alias screen-size="xdpyinfo | grep 'dimensions:'"
+alias lo-calc="libreoffice --calc"
+alias please="sudo $(history -p \!\!)"
 export PATH=$PATH:~/bin
 export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:$PYTHONPATH
 source ~/.bash_completion.d/scp
