@@ -20,10 +20,14 @@ alias c="calc"
 alias m="pymol"
 alias md="mkdir"
 alias rmr="rm -rf"
+alias xtar="tar -xzf"
+alias ctar="tar -czf"
+alias ltar="tar -tf"
 alias disk-usage="du -sk *| sort -n | cut -f2 |xargs -d'\n' du -hs $1"
 alias screen-size="xdpyinfo | grep 'dimensions:'"
 alias lo-calc="libreoffice --calc"
 alias please='sudo $(history -p \!\!)'
+alias ding="notify-send Done"
 export PATH=$PATH:~/bin
 export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:$PYTHONPATH
 source ~/.bash_completion.d/scp
