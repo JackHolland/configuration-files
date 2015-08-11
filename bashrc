@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PS1="\[\e[00;32m\]$USER (\W):\[\e[00m\] "
 alias d="cd"
 alias up="cd .."
