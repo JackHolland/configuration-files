@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PS1="\[\e[00;32m\]$USER (\W):\[\e[00m\] "
+PS1="\[\e[0;32m\]$USER\[\e[0m\] (\[\e[0;36m\]\W\[\e[0m\])\[\e[1;31m\]:\[\e[0m\] "
 alias d="cd"
 alias up="cd .."
 alias home="cd ~"
