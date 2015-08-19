@@ -2,7 +2,7 @@
 ##
 syntax "julia" "\.jl$"
 
-header "^#!.*/julia[-0-9._]*"
+#header "^#!.*/julia[-0-9._]*"
 
 icolor brightblue "def [0-9A-Z_]+"
 
