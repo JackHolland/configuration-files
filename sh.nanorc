@@ -1,4 +1,5 @@
 syntax "bash" "\.sh$" "\.bash$" "/.bash_profile$" "(\.|/)profile$" "\rc$" "(\.|/)control$"
+header "^#!.*/(ba|k|pdk)?sh[-0-9_]*"
 
 ## Control
 color magenta "\<(if|else|for|function|case|esac|in|select|until|while|do|elif|then|set|\.|done|fi)\>"
