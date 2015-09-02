@@ -33,6 +33,7 @@ alias ding="notify-send Done"
 alias dim="xflux -z 03755"
 export PATH=$PATH:~/bin
 export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:$PYTHONPATH
+export HISTSIZE=32768
 source ~/.bash_completion.d/scp
 source ~/.bash_completion.d/julia
 source /etc/profile.d/vte.sh
