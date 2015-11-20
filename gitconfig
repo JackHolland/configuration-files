@@ -7,7 +7,8 @@
 	default = simple
 [alias]
 	ad = add
-	cm = commit -am
+	cm = commit -m
+	am = commit -am
 	ps = push
 	pl = pull
 	st = status
