@@ -8,7 +8,7 @@
 [alias]
 	ad = add
 	cm = commit -m
-	am = commit -am
+	ca = commit -am
 	ps = push
 	pl = pull
 	st = status
