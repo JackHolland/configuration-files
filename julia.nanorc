@@ -6,7 +6,7 @@ syntax "julia" "\.jl$"
 
 icolor brightblue "def [0-9A-Z_]+"
 
-color green "\<(Base|Core|Main|PCRE|FFTW|Collections|DSP|LinAlg|LibRandom|Random|Math|MPFR|GMP|Sort|Test|Pkg|Operators|Errno|Meta|Graphics|Common|Naturals|ParseArgs|Testing|Cluster|Proteins|Lists|BinaryTrees|Trees|Twines)\>"
+color green "\<(Base|Core|Main|PCRE|FFTW|Collections|DSP|LinAlg|LibRandom|Random|Math|MPFR|GMP|Sort|Test|Pkg|Operators|Errno|Meta|Graphics|Common|Naturals|ParseArgs|Testing|Cluster|Proteins|Scoring|Lists|BinaryTrees|Trees|Twines)\>"
 
 color blue "\<(begin|do|for|in|function|if|immutable|let|quote|try|type|while|catch|finally|else|elseif|end|abstract|bitstype|break|ccall|const|continue|export|global|import|importall|local|macro|module|baremodule|return|typealias|using)\>"
 
