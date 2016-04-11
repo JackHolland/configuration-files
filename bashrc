@@ -63,4 +63,5 @@ export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:
 export HISTSIZE=32768
 source ~/.bash_completion.d/scp
 source ~/.bash_completion.d/julia
+source ~/.bash_completion.d/edit
 source /etc/profile.d/vte.sh
