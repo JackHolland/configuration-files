@@ -1,6 +1,24 @@
 #!/bin/bash
 
-PS1="\[\e[0;32m\]$USER\[\e[0m\] (\[\e[0;36m\]\W\[\e[0m\])\[\e[1;31m\]:\[\e[0m\] "
+function prompt() {
+	echo -e '\[\e[0;32m\]$USER\[\e[0m\]\[\e[35m\]|\[\e[0m\]\[\e[0;36m\]\W\[\e[0m\]\[\e[35m\]|\[\e[0m\]\[\e[34m\]`prompt_date`\[\e[0m\]\[`prompt_retval_color`\]:\[\e[0m\] '
+}
+
+function prompt_date() {
+	local exit_code=$?
+	date +%R
+	return $exit_code
+}
+
+function prompt_retval_color() {
+	if [[ $? -eq 0 ]]; then
+		echo -e '\e[1;31m'
+	else
+		echo -e '\e[33;41m'
+	fi
+}
+
+export PS1="`prompt`"
 alias d="cd"
 alias up="cd .."
 alias home="cd ~"
