@@ -21,6 +21,9 @@
 	co = checkout
 	rs = reset
 	rh = reset --hard
+	sh = stash
+	sa = stash apply
+	sl = stash list
 [color]
     ui = auto
 [color "branch"]
