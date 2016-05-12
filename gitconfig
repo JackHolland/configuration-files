@@ -24,6 +24,7 @@
 	sh = stash
 	sa = stash apply
 	sl = stash list
+	sd = stash drop
 [color]
     ui = auto
 [color "branch"]
