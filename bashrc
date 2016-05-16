@@ -56,7 +56,6 @@ alias screen-size="xdpyinfo | grep 'dimensions:'"
 alias lo-calc="libreoffice --calc"
 alias please='sudo $(history -p \!\!)'
 alias ding="notify-send Done"
-alias dim="xflux -z 03755"
 alias copy="xclip -selection c"
 export PATH=$PATH:~/bin
 export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:$PYTHONPATH
