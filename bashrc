@@ -60,6 +60,8 @@ alias copy="xclip -selection c"
 export PATH=$PATH:~/bin
 export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:$PYTHONPATH
 export HISTSIZE=32768
+export AAS="ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL"
+export aas="ala arg asn asp cys gln glu gly his ile leu lys met phe pro ser thr trp tyr val"
 source ~/.bash_completion.d/scp
 source ~/.bash_completion.d/julia
 source ~/.bash_completion.d/edit
