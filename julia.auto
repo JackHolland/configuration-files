@@ -19,3 +19,4 @@ _julia() {
 	fi
 }
 complete -o filenames -F _julia julia
+complete -o filenames -F _julia j
