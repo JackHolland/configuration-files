@@ -66,7 +66,7 @@ alias fkill="pkill -9"
 export PATH=$PATH:~/bin
 export PYTHONPATH=~/lib64/python2.7/site-packages:~/lib/python2.7/site-packages:$PYTHONPATH
 export HISTSIZE=32768
-export LS_COLORS='*.jl=1;95:*.py=1;95:*.pdb=91:*.jpg=33:*.png=33'
+export LS_COLORS='*.jl=1;95:*.py=1;95:*.pl=1;95:*.pdb=91:*.jpg=33:*.png=33'
 export AAS="ALA ARG ASN ASP CYS GLN GLU GLY HIS ILE LEU LYS MET PHE PRO SER THR TRP TYR VAL"
 export aas="ala arg asn asp cys gln glu gly his ile leu lys met phe pro ser thr trp tyr val"
 source ~/.bash_completion.d/scp
